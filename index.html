@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Widya Khaerunnisyah</title>
+    <title>Widy's Portfolio</title>
     <link href="src/output.css" rel="stylesheet">
     <link rel="icon" href="src/file/pp.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <!-- Header Section Start  -->
      <header class="bg-transparent absolute top-0 left-0 w-full flex
-     item-center z-10">
+     item-center z-10" >
         <div class="container">
             <div class="flex item-center justify-between relative">
-                <div class="px-4 max-w-xs">
+                <div class="px-4 max-w-xs animate__animated animate__fadeInDown">
                     <a href="#home" class="font-bold text-xs
                     text-primary block py-6">
                     <img src="src/file/1.png" alt="widy" class="text-xs"></a>
                 </div>
 
                 <div class="flex item-center px-4">
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 py-8 px-4 lg:hidden" >
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 py-8 px-4 lg:hidden animate__animated animate__fadeInDown" >
                         <span class="hamburger-line transition duration-300
                         ease-in-out origin-top-left"> </span>
                         <span class="hamburger-line transition duration-300
@@ -31,7 +33,7 @@
 
                     <nav id="nav-menu" class="hidden absolute py-5 bg-white
                     shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none
-                    lg:rounded-none">
+                    lg:rounded-none animate__animated animate__fadeInDown">
                         <ul class="block lg:flex px-4 py-4">
                             <li class="group">
                                 <a href="#home" class="text-base text-dark py-2
@@ -60,18 +62,19 @@
         </div>
      </header>
     <!-- Header Section End -->
+
     <!-- Hero Section Start -->
     <section id="home" class="pt-36">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 lg:w-1/2">
+                <div class="w-full self-center px-4 lg:w-1/2 animate__animated animate__fadeInUp">
                     <h1 class="text-base font-semibold text-primary
                     md:text-xl">Welcome, Hello. <span class="block font-bold text-dark text-4xl
                     mt-1 lg:text-5xl">I'm Widya Khaerunnisyah</span></h1>
                     <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Faculty of Information Technology |
                     <span class="text-dark">Computer Science</span></h2>
                     <p class="font-medium text-secondary mb-10
-                    leading-relaxed lg:text-lg"> 3rd Year Student, <span class="text-dark font-bold">Looking for Internship opportunity.</span></p>
+                    leading-relaxed lg:text-lg"> 3rd Year Student, <span class="text-dark font-bold">Looking for Internship opportunities.</span></p>
 
                     <a href="mailto:wkhaerunnisyah@gmail.com" class="text-base font-semibold text-white
                     bg-primary py-3 px-8 rounded-full hover::shadow-lg
@@ -79,7 +82,7 @@
                 </div>
 
                 <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+                    <div class="relative mt-10 lg:mt-9 lg:right-0 animate__animated animate__fadeInUp" >
                     <img src="src/file/pp.png" alt="Widya" class="max-w-full mx-auto" />
                     <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2
                     md:scale-125">
@@ -96,15 +99,15 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32" >
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full px-4 mb-10 lg:w-1/2">
-                    <h4 class="font-bold uppercase text-primary text-lg mb-3" >About me</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Im Looking for any Internship opportunities</h2>
-                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni cupiditate molestiae necessitatibus quia in odio magnam.</p>
+                <div class="w-full px-4 mb-10 lg:w-1/2" data-aos="fade-up">
+                    <h4 class="font-bold uppercase text-primary text-lg mb-3">About me</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl" >Im Looking for any Internship opportunities</h2>
+                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni cupiditate molestiae necessitatibus quia in odio magnam.</p>
                 </div>
-                <div class="w-full px-4 lg:w-1/2" >
+                <div class="w-full px-4 lg:w-1/2" data-aos="fade-up">
                     <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Let's Connect</h3>
                     <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam aspernatur voluptate hic, fugiat facilis dolorem rerum! </p>
                     <div class="flex item-center">
@@ -134,7 +137,7 @@
     </section>
     <!-- About Section End -->
 
-    <section id="blog" class="pt-36 pb-32 bg-slate-100">
+    <section id="blog" class="pt-36 pb-32 bg-slate-100" data-aos="fade-up">
         <div class="container">
                 <div class="w-full px-4">
                     <div class="max-w-xl mx-auto text-center mb-16">
@@ -506,6 +509,10 @@
 
     <!-- Script -->
     <script src="src/js/script.js">
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
