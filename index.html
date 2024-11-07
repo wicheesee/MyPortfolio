@@ -102,12 +102,12 @@
     <section id="about" class="pt-36 pb-32" >
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full px-4 mb-10 lg:w-1/2" data-aos="fade-up">
+                <div class="w-full px-4 mb-10 lg:w-1/2" data-aos="fade-up" data-aos-duration="1000">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">About me</h4>
                     <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl" >Im Looking for any Internship opportunities</h2>
                     <p class="font-medium text-base text-secondary max-w-xl lg:text-lg" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni cupiditate molestiae necessitatibus quia in odio magnam.</p>
                 </div>
-                <div class="w-full px-4 lg:w-1/2" data-aos="fade-up">
+                <div class="w-full px-4 lg:w-1/2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                     <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Let's Connect</h3>
                     <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam aspernatur voluptate hic, fugiat facilis dolorem rerum! </p>
                     <div class="flex item-center">
@@ -137,13 +137,15 @@
     </section>
     <!-- About Section End -->
 
-    <section id="blog" class="pt-36 pb-32 bg-slate-100" data-aos="fade-up">
+    <!-- Portofolio -->
+    <section id="blog" class="pt-36 pb-32 bg-slate-100">
         <div class="container">
                 <div class="w-full px-4">
-                    <div class="max-w-xl mx-auto text-center mb-16">
-                        <h4 class="font-semibold text-lg text-primary mb-2">BLOG</h4>
+                    <div class="max-w-xl mx-auto text-center mb-16" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">
+                        <h4 class="font-semibold text-lg text-primary mb-2">MY PORTFOLIO PROJECTS</h4>
                         <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl
-                        lg:text-5xl" >Tulisan Terkini</h2>
+                        lg:text-5xl" >Individual & Team Projects</h2>
                         <p class="font-medium text-md text-secondary" md:text-lg>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorem officia impedit sunt minus nesciunt quis, 
                         beatae animi dolorum sequi!</p>
                     </div>
@@ -152,7 +154,7 @@
                 <div class="flex flex-wrap">
                     <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden
-                        mb-10">
+                        mb-10" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="300">
                             <img src="src/file/portfolio/FigmaPrototyping.png" alt="Programming" class="w-full" />
                             <div class="py-8 px-6">
                                 <h3>
@@ -168,7 +170,7 @@
                     </div>
                     <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden
-                        mb-10">
+                        mb-10" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="500">
                             <img src="src/file/portfolio/FigmaPrototyping.png" alt="Programming" class="w-full" />
                             <div class="py-8 px-6">
                                 <h3>
@@ -184,7 +186,7 @@
                     </div>
                     <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden
-                        mb-10">
+                        mb-10" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="700">
                             <img src="src/file/portfolio/FigmaPrototyping.png" alt="Programming" class="w-full" />
                             <div class="py-8 px-6">
                                 <h3>
@@ -201,6 +203,7 @@
                 </div>
             </div>
     </section>
+    <!-- Portofolio End -->
 
     <!-- Portfolio Start -->
     <section id="portofolio" class="pt-36 pb-16 bg-slate-100">
@@ -386,6 +389,10 @@
     </section>
     <!-- Contact Section END -->
 
+    <!--Music Control-->
+    <div id="vinyl" class="fixed bottom-2.5 right-2.5 w-12 h-12 bg-cover rounded-full animate-vinyl-spin" style="background-image: url('src/file/vinyl.png');"></div>
+    <div id="tooltip" class="fixed bottom-20 right-2.5 bg-blue-100 text-primary text-sm font-semibold p-2 rounded-md hidden"> </div>
+
     <!-- footer start -->
     <footer class="bg-dark pt-24 py-12">
         <div class="container">
@@ -514,5 +521,7 @@
     <script>
         AOS.init();
     </script>
+    <!-- Song JS-->
+    <script type="text/javascript" src="src/js/song.js"></script>
 </body>
 </html>
