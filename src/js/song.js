@@ -7,9 +7,9 @@ var playlist = [
 var currentSong = 0;
 var audio = new Audio(playlist[currentSong]);
 audio.loop = false;
-audio.autoplay = true;
 audio.muted = false;
 
+// Set up the initial tooltip text and fade it out after 2 seconds
 window.onload = function() {
     document.getElementById('vinyl').style.animation = 'none'; // No spinning animation on load
     document.getElementById('tooltip').innerText = 'Click vinyl to play the songs.'; // Initial tooltip message
@@ -18,11 +18,6 @@ window.onload = function() {
     setTimeout(function() {
         fadeOut('tooltip', 500); // Fade out after 2 seconds
     }, 2000); // Wait 2 seconds before fading out
-
-    // Automatically play the audio when the page loads (autoplay should be working)
-    audio.play().catch(function(error) {
-        console.log('Autoplay was blocked: ' + error); // In case autoplay is blocked, log the error
-    });
 };
 
 // Play/Pause functionality when the vinyl is clicked
