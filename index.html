@@ -78,7 +78,7 @@
                     <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Faculty of Information Technology |
                     <span class="text-dark">Computer Science</span></h2>
                     <p class="font-medium text-secondary mb-10
-                    leading-relaxed lg:text-lg"> 3<sup>rd</sup> Year Student | <span class="text-dark font-bold">Tarumanagara University.</span></p>
+                    leading-relaxed lg:text-lg"> 3<sup>rd</sup> Year Student | <a href="https://untar.ac.id/" target="_blank"><span class="text-dark font-bold hover:text-primary">Tarumanagara University</span></a></p>
                     <a href="#contact" class="text-base font-semibold text-white
                     bg-primary py-3 px-8 rounded-full hover::shadow-lg
                       hover:opacity-50 transition duration-300 ease-in-out">Contact me</a>
@@ -122,8 +122,8 @@
                         Education
                         </p>
                         <ul class="font-medium text-base text-secondary mb-6 lg:text-lg">
-                            <li>• Universitas Tarumanagara, Computer Science (S1).</li>
-                            <li>• SMAN 2 Tangerang, Mathematic and Natural Science. </li>
+                            <li>• Universitas Tarumanagara, Computer Science (Undergraduate Degree).</li>
+                            <li>• SMAN 2 Tangerang, Mathematic and Natural Science (High School Diploma). </li>
                         </ul>
                     <p class="font-semibold text-base text-secondary mb-2 lg:text-lg">
                         Work Experiences
@@ -187,9 +187,9 @@
                 <div class="w-full px-4">
                     <div class="max-w-xl mx-auto text-center mb-16" data-aos="fade-up"
                     data-aos-anchor-placement="bottom-bottom">
-                        <h4 class="font-semibold text-lg text-primary mb-2">PORTFOLIO PROJECTS</h4>
-                        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-3xl
-                        lg:text-4xl">Individual & Team Projects</h2>
+                        <h4 class="font-semibold text-lg text-primary mb-2">PORTFOLIO</h4>
+                        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl
+                        lg:text-5xl">My Projects</h2>
                         <p class="font-medium text-md text-secondary" md:text-lg>
                             Introducing my individual & team projects i've been included.
                         </p>
@@ -197,9 +197,45 @@
                 </div>
 
                 <div class="flex flex-wrap">
-                    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="w-full px-4 lg:w-1/2 xl:w-1/2">
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden
-                        mb-10" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="300">
+                        mb-10" data-aos="zoom-in-right" data-aos-duration="1000">
+                            <img src="src/file/portfolio/FigmaPrototyping.png" alt="Programming" class="w-full" />
+                            <div class="py-8 px-6">
+                                <h3>
+                                <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
+                                    Full-Stack VyesFleur Website Integrated with PostgreeSQL Database
+                                </a>
+                                </h3>
+                                <p class="font-medium text-base text-secondary mb-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, non.
+                                </p>
+                                <!-- Tombol -->
+                                <button onclick="toggleModal()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
+                                    Full Description
+                                </button>                            
+                            </div>
+                        </div>
+                    </div>
+
+                   <!-- Modal -->
+                    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+                        <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/2 lg:w-1/3 animate__animated animate__fadeInDown">
+                            <h2 class="text-xl font-semibold mb-4 ">Project Details</h2>
+                            <p class="text-gray-700 mb-4 animate__animated animate__fadeInDown">
+                                This is a more detailed description of the Full-Stack VyesFleur Website integrated with a PostgreSQL Database.
+                                You can provide further details about the technologies used, challenges faced, and unique features.
+                            </p>
+                            <!-- Close Button -->
+                            <button onclick="toggleModal()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 animate__animated animate__fadeInDown">
+                                Close
+                            </button>
+                        </div> 
+                    </div>             
+                    
+                    <div class="w-full px-4 lg:w-1/2 xl:w-1/2">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden
+                        mb-10" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="300">
                             <img src="src/file/portfolio/FigmaPrototyping.png" alt="Programming" class="w-full" />
                             <div class="py-8 px-6">
                                 <h3>
@@ -208,14 +244,66 @@
                                 </h3>
                                 <p class="font-medium text-base text-secondary 
                                 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, non.</p>
-                                <a href="#" class="font-medium text-sm text-white
-                                bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                                 <!-- Tombol2 -->
+                                 <button onclick="toggleModal2()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
+                                    Full Description
+                                </button> 
                             </div>
                         </div>
                     </div>
-                    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+
+                    <!-- Modal2 -->
+                    <div id="projectModal2" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+                        <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/2 lg:w-1/3 animate__animated animate__fadeInDown">
+                            <h2 class="text-xl font-semibold mb-4 ">Project Details</h2>
+                            <p class="text-gray-700 mb-4 animate__animated animate__fadeInDown">
+                                This is a more detailed description of the Full-Stack VyesFleur Website integrated with a PostgreSQL Database.
+                                You can provide further details about the technologies used, challenges faced, and unique features.
+                            </p>
+                            <!-- Close Button -->
+                            <button onclick="toggleModal2()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 animate__animated animate__fadeInDown">
+                                Close
+                            </button>
+                        </div> 
+                    </div>         
+
+                    <div class="w-full px-4 lg:w-1/2 xl:w-1/2">
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden
-                        mb-10" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="500">
+                        mb-10" data-aos="zoom-in-right" data-aos-duration="1000">
+                            <img src="src/file/portfolio/FigmaPrototyping.png" alt="Programming" class="w-full" />
+                            <div class="py-8 px-6">
+                                <h3>
+                                    <a href="#" class="block mb-3 font-semibold text-xl
+                                    text-dark hover:text-primary truncate">Tips Belajar Programming</a>
+                                </h3>
+                                <p class="font-medium text-base text-secondary mb-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, non.</p>
+                                <!-- Tombol2 -->
+                                <button onclick="toggleModal3()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
+                                    Full Description
+                                </button> 
+                            </div>
+                        </div>
+                    </div>
+
+                       <!-- Modal3 -->
+                       <div id="projectModal3" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+                        <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/2 lg:w-1/3 animate__animated animate__fadeInDown">
+                            <h2 class="text-xl font-semibold mb-4 ">Project Details</h2>
+                            <p class="text-gray-700 mb-4 animate__animated animate__fadeInDown">
+                                This is a more detailed description of the Full-Stack VyesFleur Website integrated with a PostgreSQL Database.
+                                You can provide further details about the technologies used, challenges faced, and unique features.
+                            </p>
+                            <!-- Close Button -->
+                            <button onclick="toggleModal3()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 animate__animated animate__fadeInDown">
+                                Close
+                            </button>
+                        </div> 
+                    </div> 
+                    
+                    <div class="w-full px-4 lg:w-1/2 xl:w-1/2">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden
+                        mb-10" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="300">
                             <img src="src/file/portfolio/FigmaPrototyping.png" alt="Programming" class="w-full" />
                             <div class="py-8 px-6">
                                 <h3>
@@ -224,27 +312,28 @@
                                 </h3>
                                 <p class="font-medium text-base text-secondary 
                                 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, non.</p>
-                                <a href="#" class="font-medium text-sm text-white
-                                bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                                 <!-- Tombol2 -->
+                                 <button onclick="toggleModal4()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
+                                    Full Description
+                                </button> 
                             </div>
                         </div>
                     </div>
-                    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                        <div class="bg-white rounded-xl shadow-lg overflow-hidden
-                        mb-10" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="700">
-                            <img src="src/file/portfolio/FigmaPrototyping.png" alt="Programming" class="w-full" />
-                            <div class="py-8 px-6">
-                                <h3>
-                                    <a href="#" class="block mb-3 font-semibold text-xl
-                                    text-dark hover:text-primary truncate">Tips Belajar Programming</a>
-                                </h3>
-                                <p class="font-medium text-base text-secondary 
-                                mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, non.</p>
-                                <a href="#" class="font-medium text-sm text-white
-                                bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
-                            </div>
-                        </div>
-                    </div>
+
+                    <!-- Modal4 -->
+                    <div id="projectModal4" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+                        <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/2 lg:w-1/3 animate__animated animate__fadeInDown">
+                            <h2 class="text-xl font-semibold mb-4 ">Project Details</h2>
+                            <p class="text-gray-700 mb-4 animate__animated animate__fadeInDown">
+                                This is a more detailed description of the Full-Stack VyesFleur Website integrated with a PostgreSQL Database.
+                                You can provide further details about the technologies used, challenges faced, and unique features.
+                            </p>
+                            <!-- Close Button -->
+                            <button onclick="toggleModal4()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 animate__animated animate__fadeInDown">
+                                Close
+                            </button>
+                        </div> 
+                    </div>      
                 </div>
             </div>
     </section>
@@ -299,7 +388,6 @@
                 <p class="font-medium txt-base text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae neque quod impedit?</p>
             </div>
         </div>
-
     </section>
     <!-- Portfolio End -->
 
@@ -350,6 +438,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden
                         mb-10">
@@ -366,6 +455,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden
                         mb-10">
@@ -436,7 +526,7 @@
 
     <!--Music Control-->
     <div id="vinyl" class="fixed bottom-2.5 right-2.5 w-12 h-12 bg-cover rounded-full animate-vinyl-spin" style="background-image: url('src/file/vinyl.png');"></div>
-    <div id="tooltip" class="fixed bottom-20 right-2.5 bg-blue-100 text-primary text-sm font-semibold p-2 rounded-md hidden"> </div>
+    <div id="tooltip" class="fixed bottom-20 right-2.5 bg-blue-100 text-primary text-sm font-semibold p-2 rounded-md hidden animate__animated animate__fadeInUp"> </div>
 
     <!-- footer start -->
     <footer class="bg-dark pt-24 py-12">
@@ -560,13 +650,13 @@
     <!-- footer end -->
 
     <!-- Script -->
-    <script src="src/js/script.js">
-    </script>
+    <script src="src/js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <!-- Song JS-->
     <script type="text/javascript" src="src/js/song.js"></script>
+
 </body>
 </html>
