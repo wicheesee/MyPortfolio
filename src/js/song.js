@@ -1,19 +1,23 @@
 // Music Controls
 var playlist = [
     'src/file/song/lofielegance.mp3',
-    'src/file/song/Usagi\ Flap.mp3' // Perbaiki nama file
+    'src/file/song/Usagi Flap.mp3' // Fixed filename issue: removed backslash
 ];
 
 var currentSong = 0;
 var audio = new Audio(playlist[currentSong]);
-audio.loop = false; // Set loop to false so the audio doesn't loop on itself over and over again
-audio.autoplay = true; // Autoplay the song when the page loads
-audio.muted = false; // Make sure the audio isn't muted
+audio.loop = false;
+audio.autoplay = true;
+audio.muted = false;
 
 window.onload = function() {
     document.getElementById('vinyl').style.animation = 'none'; // No spinning animation on load
-    fadeInOut('tooltip', 1000, 2000); // Fade in and out tooltip
     document.getElementById('tooltip').innerText = 'Click vinyl to play the songs.'; // Initial tooltip message
+
+    fadeIn('tooltip', 500); // Fade in the tooltip on page load
+    setTimeout(function() {
+        fadeOut('tooltip', 500); // Fade out after 2 seconds
+    }, 2000); // Wait 2 seconds before fading out
 
     // Automatically play the audio when the page loads (autoplay should be working)
     audio.play().catch(function(error) {
