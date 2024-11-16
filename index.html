@@ -88,7 +88,15 @@
 
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10 lg:mt-9 lg:right-0 animate__animated animate__fadeInUp" >
-                    <img src="src/file/pp.png" alt="Widya" class="max-w-full mx-auto" />
+                        <div class="flex flex-col justify-center items-center">
+                            <div class="w-96 h-96 bg-transparent flex justify-center items-center">
+                              <img  
+                                id="profilePicture" 
+                                src="src/file/pp.png" 
+                                alt="Widya" 
+                                class="object-cover w-full h-full" />
+                            </div>
+                          </div>
                     <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2
                     md:scale-125">
                         <svg widht= "400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -109,8 +117,8 @@
             <div class="flex flex-wrap">
                 <div class="block w-full px-4 mb-10 lg:w-1/2" data-aos="fade-up" data-aos-duration="1000">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">About me</h4>
-                    <div class="font-bold text-dark text-3xl max-w-md lg:text-4xl mb-20"> <!-- Adjust the height as per your text size -->
-                        <span id="text2" class="absolute inline-block whitespace-nowrap"></span>
+                    <div class="font-bold text-dark text-3xl max-w-md lg:text-4xl mb-1"> <!-- Adjust the height as per your text size -->
+                       Hardworker, Dedicated, and Curious.
                     </div>
                     <p class="font-medium text-base text-secondary max-w-xl lg:text-lg text-justify">
                     <span class="block font-semibold">These three words describe me: </span><span class="block text-primary font-semibold">hardworker, dedicated, and curious.</span>
@@ -436,7 +444,7 @@
                                 
                                 
                                 <!-- Tombol -->
-                                <button onclick="toggleModal3()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
+                                <button onclick="toggleModal4()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
                                     Full Description
                                 </button>                            
                             </div>
@@ -444,7 +452,7 @@
                     </div>
 
                     <!-- Modal4 -->
-                    <div id="projectModal3" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+                    <div id="projectModal4" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
                         <div class="bg-white rounded-lg shadow-lg p-6 w-11/12 max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-xl animate__animated animate__fadeInDown max-h-[60vh] overflow-y-auto">
                             <h2 class="text-xl font-semibold mb-4">Text Summarization Using UiPath and TextRank Algorithm Implemented in a Website</h2>
                             <p class="font-medium text-base text-secondary mb-6 line-clamp-5 text-justify">
@@ -509,7 +517,7 @@
                                 
                                 
                                 <!-- Tombol -->
-                                <button onclick="toggleModal3()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
+                                <button onclick="toggleModal5()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
                                     Full Description
                                 </button>                            
                             </div>
@@ -517,7 +525,7 @@
                     </div>
 
                     <!-- Modal5 -->
-                    <div id="projectModal3" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+                    <div id="projectModal5" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
                         <div class="bg-white rounded-lg shadow-lg p-6 w-11/12 max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-xl animate__animated animate__fadeInDown max-h-[60vh] overflow-y-auto">
                             <h2 class="text-xl font-semibold mb-4">Text Summarization Using UiPath and TextRank Algorithm Implemented in a Website</h2>
                             <p class="font-medium text-base text-secondary mb-4 text-justify animate__animated animate__fadeInDown">
@@ -542,7 +550,7 @@
                             <!-- Buttons Container -->
                             <div class="flex justify-between mt-4">
                                 <!-- Close Button -->
-                                <button onclick="toggleModal3()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
+                                <button onclick="toggleModal4()" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
                                     Close
                                 </button>
                     
@@ -568,6 +576,8 @@
                             lg:text-5xl">My Skills</h2>
                             <p class="font-medium text-md text-secondary" md:text-lg>
                             Introducing programming & structured query languages, frameworks, tools that I have learned and used.</p>
+                            <p class="font-medium text-md text-secondary" md:text-lg>
+                                Click Each Column.</p>
                         </div>
                     </div>
                     
@@ -575,7 +585,7 @@
                         <input type="checkbox" class="peer" />
                         <div
                           class="font-semibold collapse-title bg-primary text-primary-content peer-checked:bg-violet-950 peer-checked:text-secondary-content " >
-                          Education
+                          Structured Query Language (SQL)
                         </div>
                         <div
                           class="collapse-content bg-primary text-primary-content peer-checked:bg-violet-950 peer-checked:text-secondary-content">
@@ -601,7 +611,7 @@
                         <input type="checkbox" class="peer" />
                         <div
                           class="font-semibold collapse-title bg-primary text-primary-content peer-checked:bg-violet-950 peer-checked:text-secondary-content">
-                          Education
+                          Programming Language
                         </div>
                         <div
                           class="collapse-content bg-primary text-primary-content peer-checked:bg-violet-950 peer-checked:text-secondary-content">
@@ -651,7 +661,7 @@
                         <input type="checkbox" class="peer" />
                         <div
                           class="font-semibold collapse-title bg-primary text-primary-content peer-checked:bg-violet-950 peer-checked:text-secondary-content">
-                          Education
+                          HTML & CSS
                         </div>
                         <div
                           class="collapse-content bg-primary text-primary-content peer-checked:bg-violet-950 peer-checked:text-secondary-content">
@@ -676,7 +686,7 @@
                         <input type="checkbox" class="peer" />
                         <div
                           class="font-semibold collapse-title bg-primary text-primary-content peer-checked:bg-violet-950 peer-checked:text-secondary-content">
-                          Education
+                          Framework
                         </div>
                         <div
                           class="collapse-content bg-primary text-primary-content peer-checked:bg-violet-950 peer-checked:text-secondary-content">
@@ -714,7 +724,7 @@
                         <input type="checkbox" class="peer" />
                         <div
                           class="font-semibold collapse-title bg-primary text-primary-content peer-checked:bg-violet-950 peer-checked:text-secondary-content">
-                          Education
+                          Tools
                         </div>
                         <div
                           class="collapse-content bg-primary text-primary-content peer-checked:bg-violet-950 peer-checked:text-secondary-content">
@@ -742,7 +752,6 @@
                     </div>
         </div>
     </section>
-
     <!-- Skills End -->
 
      <!-- Documentation Start -->
@@ -788,7 +797,8 @@
                     Introducing my organization certificates</p>
                 </div>
             </div>
-            <div class="carousel rounded-box" data-aos="fade-up">
+
+            <div class="carousel rounded-box w-full h-96" data-aos="fade-up">
                 <div class="carousel-item">
                   <img
                     src="src/file/certificate2/Secretary.png"
@@ -810,18 +820,23 @@
                     alt="Burger" />
                 </div>
                 <div class="carousel-item">
-                  <img
+                    <img
+                    src="src/file/certificate2/AnggotaKeamananWP.jpg"
+                    alt="Burger" />
+                </div>
+                <div class="carousel-item">
+                    <img
+                    src="src/file/certificate2/AnggotaKesekre.jpg"
+                    alt="Burger" />
+                </div>
+                <div class="carousel-item">
+                    <img
                     src="src/file/certificate2/Juniormember.png"
                     alt="Burger" />
                 </div>
                 <div class="carousel-item">
                   <img
                     src="src/file/certificate2/io.png"
-                    alt="Burger" />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
                     alt="Burger" />
                 </div>
               </div>
@@ -837,13 +852,13 @@
                         <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
                         <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl
                         lg:text-5xl" >Hire Me!</h2>
-                        <p class="font-medium text-md text-secondary" md:text-lg>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laborum cupiditate placeat velit atque accusantium voluptate recusandae
-                        necessitatibus ipsam.</p>
+                        <p class="font-medium text-md text-secondary" md:text-lg>
+                            I am highly proficient in SQL and web programming, with a strong passion for continuous learning. I am open to new experiences and excited to embrace various opportunities. Hire me! :)
+                        </p>
                     </div>
                 </div>
 
-            <div class="flex justify-center" data-aos="fade-up"
-            data-aos-anchor-placement="top-center">
+            <div class="flex justify-center" data-aos="fade-up">
                 <a href="mailto:wkhaerunnisyah@gmail.com" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-50 transition duration-300 ease-in-out">
                     Get In Touch by Mail
                 </a>
@@ -855,7 +870,7 @@
 
     <!--Music Control-->
     <div id="vinyl" class="fixed bottom-2.5 right-2.5 w-12 h-12 bg-cover rounded-full animate-vinyl-spin" style="background-image: url('src/file/vinyl.png');"></div>
-    <div id="tooltip" class="fixed bottom-20 right-2.5 bg-blue-100 text-primary text-sm font-semibold p-2 rounded-md hidden animate__animated animate__fadeInUp"> </div>
+    <div id="tooltip" class="fixed bottom-20 right-2.5 bg-blue-100 text-primary text-sm font-semibold p-2 rounded-md hidden"> </div>
 
     <!-- footer start -->
     <footer class="bg-violet-950 pt-24 py-12">
@@ -958,6 +973,7 @@
 
     <!-- Script -->
     <script src="src/js/script.js"></script>
+    <script src="src/js/profile.js"></script>
     <script src="src/js/autotyping.js"></script>
     <script src="src/js/autotyping2.js"></script>
     <script src="src/js/autotyping3.js"></script>

@@ -53,3 +53,11 @@ function toggleModal4() {
      // Toggle overflow-hidden pada body saat modal muncul atau ditutup
      document.body.classList.toggle('overflow-hidden');
 }
+
+function toggleModal5() {
+    const modal = document.getElementById('projectModal5');
+    modal.classList.toggle('hidden');
+
+     // Toggle overflow-hidden pada body saat modal muncul atau ditutup
+     document.body.classList.toggle('overflow-hidden');
+}
