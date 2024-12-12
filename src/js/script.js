@@ -163,3 +163,4 @@ modalCheckbox.addEventListener("change", () => {
         navbar2.classList.remove("navbar-disabled");
     }
 });
+
